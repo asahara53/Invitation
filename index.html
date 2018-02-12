@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title></title>
+    <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+</head>
+<body>
+<!-- Mv -->
+<div class="Mv"
+<!-- SVG
+  <object id="thanks-svg" type="image/svg+xml" data="/thankswhite.svg" class="Mv__img"></object>
+</div>
+<!-- /Mv -->
+<!-- Greeting -->
+<div class="Greeting">
+  <div class="Greeting__ttl">
+    <p class="Greeting__ttl__txt">
+      招待状 
+    </p>
+  </div>
+  <div class="Greeting__cont">
+    <div class="Greeting__cont__txt">
+      <p class="Greeting__cont__txt__first">謹啓<br></p>
+      <p class="Greeting__cont__txt__main">
+      向春の候 皆様にはますますご清祥のことと<br>
+      お慶び申し上げます<br>
+      <br>
+      わたしたちは 2015年3月16日に入籍いたしました<br>
+      つきましては 日頃お世話になっている皆様に<br>
+      おあつまりいただき ささやかな披露宴を催します<br>
+      ご多用中 恐縮ではございますが<br>
+      ご来臨の栄を賜りたく
+      謹んでご案内申し上げます<br></p>
+      <p class="Greeting__cont__txt__end">敬白<br></p>
+    </div>
+  </div>
+</div>
+<!-- /Greeting -->
+<!-- Wedding at -->
+<div class="WeddingAt">
+  <div class="WeddingAt__ttl">
+    <p class="WeddingAt__ttl__txt">
+      ご来場詳細 
+    </p>
+  </div>
+  <div class="WeddingAt__cont">
+    <div class="WeddingAt__cont__box">
+      <p class="WeddingAt__cont__box__ttl">日時<br></p>
+      <p class="WeddingAt__cont__box__txt">
+      2018年 4月 28日(土曜日)  12時 00分<br>
+      <br>
+      </p>
+      <p class="WeddingAt__cont__box__ttl">場所<br></p>
+      <p class="WeddingAt__cont__box__txt">
+        <a href="https://tokyo.lumiveil.com/access/" target="_blank">ルミヴェール東京</a><br>
+        〒105-7141　東京都港区東新橋一丁目5番2号<br>
+        汐留シティセンター41F<br>
+        「汐留駅」「新橋駅」直結
+      </p>
+    </div>
+  </div>
+</div>
+<!-- /Wedding at -->
+<!-- Register Form -->
+<div class="Form">
+  <div class="Form__ttl">
+    <p class="Form__ttl__txt">
+     ご返信  
+    </p>
+  </div>
+<form name="wedding_active_form" action="/register/" method="post">
+    {{ csrf_field() }}
+    <ul class="formList">
+        <li class="formList__item">
+            <p class="formList__item__ttl"><label>ご参列可否<span>*</span></label></p>
+            <div class="enquiryType">
+                <select name="presence" class="presence">
+                    <option value="4">Others</option>
+                </select>
+            </div>
+        </li>
+        <li class="formList__item">
+            <p class="formList__item__ttl"><label>お名前<span>*</span></label></p>
+            <input class="formList__item__name" type="text" name="name" value="{{ input_old('name') }}"
+            placeholder="お名前">
+            <span class="formList__item__errorMsg">{{ errors.first('name') }}</span>
+        </li>
+        <li class="formList__item">
+            <p class="formList__item__ttl"><label>(招待状をご要望の場合)メールアドレス</label></p>
+            <input class="formList__item__email" type="text" name="email"
+            value="{{ input_old('email') }}" placeholder="aihara@example.com">
+            <span class="formList__item__errorMsg">{{ errors.first('email') }}</span>
+        </li>
+        <li class="formList__item">
+            <p class="formList__item__ttl"><label>備考</label></p>
+            <textarea class="formList__item__description" type="text" id="description" name="description" placeholder="アレルギーや苦手なものなどありましたら、お気軽にお申し付けください。">{{ old('description') }}</textarea>
+            <span class="formList__item__errorMsg">{{ errors.first('description') }}</span>
+        </li>
+    </ul>
+    <label class="submitBtn" for="submit">
+        <input type="submit" class="none" id="submit" disabled>SUBMIT
+    </label>
+</form>
+</div>
+<!-- /Register Form -->
+    <footer>
+    </footer>
+<script src="{{ mix('/js/app.js') }}"></script>
+</body>
+</html>
