@@ -1,0 +1,35 @@
+{% block content %}
+<form name="wedding_active_form" action="/register/" method="post">
+    {{ csrf_field() }}
+    <ul class="formList">
+        <li class="formList__item">
+            <p class="formList__item__ttl"><label>ご参列可否<span>*</span></label></p>
+            <div class="enquiryType">
+                <select name="presence" class="presence">
+                    <option value="4">Others</option>
+                </select>
+            </div>
+        </li>
+        <li class="formList__item">
+            <p class="formList__item__ttl"><label>お名前<span>*</span></label></p>
+            <input class="formList__item__name" type="text" name="name" value="{{ input_old('name') }}"
+            placeholder="お名前">
+            <span class="formList__item__errorMsg">{{ errors.first('name') }}</span>
+        </li>
+        <li class="formList__item">
+            <p class="formList__item__ttl"><label>(招待状をご要望の場合)メールアドレス</label></p>
+            <input class="formList__item__email" type="text" name="email"
+            value="{{ input_old('email') }}" placeholder="aihara@example.com">
+            <span class="formList__item__errorMsg">{{ errors.first('email') }}</span>
+        </li>
+        <li class="formList__item">
+            <p class="formList__item__ttl"><label>備考</label></p>
+            <textarea class="formList__item__description" type="text" id="description" name="description" placeholder="アレルギーや苦手なものなどありましたら、お気軽にお申し付けください。">{{ old('description') }}</textarea>
+            <span class="formList__item__errorMsg">{{ errors.first('description') }}</span>
+        </li>
+    </ul>
+    <label class="submitBtn" for="submit">
+        <input type="submit" class="none" id="submit" disabled>SUBMIT
+    </label>
+</form>
+{% endblock %}

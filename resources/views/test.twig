@@ -1,0 +1,69 @@
+{% extends('layout/default') %}
+{% block content %}
+<!-- Mv -->
+<div class="Mv"
+<!-- SVG
+  <object id="thanks-svg" type="image/svg+xml" data="/thankswhite.svg" class="Mv__img"></object>
+</div>
+<!-- /Mv -->
+<!-- Greeting -->
+<div class="Greeting">
+  <div class="Greeting__ttl">
+    <p class="Greeting__ttl__txt">
+      招待状 
+    </p>
+  </div>
+  <div class="Greeting__cont">
+    <div class="Greeting__cont__txt">
+      <p class="Greeting__cont__txt__first">謹啓<br></p>
+      <p class="Greeting__cont__txt__main">
+      向春の候 皆様にはますますご清祥のことと<br>
+      お慶び申し上げます<br>
+      <br>
+      わたしたちは 2015年3月16日に入籍いたしました<br>
+      つきましては 日頃お世話になっている皆様に<br>
+      おあつまりいただき ささやかな披露宴を催します<br>
+      ご多用中 恐縮ではございますが<br>
+      ご来臨の栄を賜りたく
+      謹んでご案内申し上げます<br></p>
+      <p class="Greeting__cont__txt__end">敬白<br></p>
+    </div>
+  </div>
+</div>
+<!-- /Greeting -->
+<!-- Wedding at -->
+<div class="WeddingAt">
+  <div class="WeddingAt__ttl">
+    <p class="WeddingAt__ttl__txt">
+      ご来場詳細 
+    </p>
+  </div>
+  <div class="WeddingAt__cont">
+    <div class="WeddingAt__cont__box">
+      <p class="WeddingAt__cont__box__ttl">日時<br></p>
+      <p class="WeddingAt__cont__box__txt">
+      2018年 4月 28日(土曜日)  12時 00分<br>
+      <br>
+      </p>
+      <p class="WeddingAt__cont__box__ttl">場所<br></p>
+      <p class="WeddingAt__cont__box__txt">
+        <a href="https://tokyo.lumiveil.com/access/" target="_blank">ルミヴェール東京</a><br>
+        〒105-7141　東京都港区東新橋一丁目5番2号<br>
+        汐留シティセンター41F<br>
+        「汐留駅」「新橋駅」直結
+      </p>
+    </div>
+  </div>
+</div>
+<!-- /Wedding at -->
+<!-- Register Form -->
+<div class="Form">
+  <div class="Form__ttl">
+    <p class="Form__ttl__txt">
+     ご返信  
+    </p>
+  </div>
+{% include('form') %}
+</div>
+<!-- /Register Form -->
+{% endblock %}

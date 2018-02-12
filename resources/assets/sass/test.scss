@@ -1,0 +1,115 @@
+/* test page sass*/
+body {
+  margin: 0;
+  color: #1d558d;
+  font-family: 'Sawarabi Mincho';
+}
+
+/* -----------
+       Mv
+  ------------ */
+.Mv {
+  height: 100%;
+  min-height: 770px;
+  background-image: url("/background.svg");
+  &__img {
+    margin-top: 30%;
+  }
+}
+
+/* -----------
+    Greeting
+  ------------ */
+.Greeting {
+  height: 100%;
+  min-height: 770px;
+  &__ttl {
+    padding-left: 65%;
+    padding-right: 20%;
+    height: 10%;
+    &__txt {
+      font-size: 50px;
+      text-align: center;
+      background: linear-gradient(transparent 50%, #aad5ff 50%);
+    }
+  }
+  &__cont {
+    padding-left: 20%;
+    padding-right: 20%;
+    &__txt {
+      letter-spacing: 5px;
+      line-height: 2;
+      &__main {
+        padding-left: 10%;
+      }
+      &__end {
+        padding-left: 70%;
+        padding-right: 20%;
+      }
+    }
+  }
+}
+
+/* -----------
+   WeddingAt
+  ------------ */
+.WeddingAt {
+  height: 100%;
+  min-height: 770px;
+  &__ttl {
+    padding-left: 57%;
+    padding-right: 20%;
+    height: 10%;
+    &__txt {
+      font-size: 50px;
+      text-align: center;
+      background: linear-gradient(transparent 50%, #aad5ff 50%);
+    }
+  }
+  &__cont {
+    padding-left: 20%;
+    padding-right: 20%;
+    &__box {
+      &__ttl {
+        font-size: 30px;
+      }
+      &__txt {
+        padding-left: 10%;
+        letter-spacing: 5px;
+        line-height: 2;
+      }
+    }
+  }
+}
+
+/* -----------
+ Register Form
+  ------------ */
+.Form {
+  height: 100%;
+  min-height: 770px;
+  &__ttl {
+    padding-left: 57%;
+    padding-right: 20%;
+    height: 10%;
+    &__txt {
+      font-size: 50px;
+      text-align: center;
+      background: linear-gradient(transparent 50%, #aad5ff 50%);
+    }
+  }
+  &__cont {
+    padding-left: 20%;
+    padding-right: 20%;
+    &__box {
+      &__ttl {
+        font-size: 30px;
+      }
+      &__txt {
+        padding-left: 10%;
+        letter-spacing: 5px;
+        line-height: 2;
+      }
+    }
+  }
+}
