@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@import url(https://fonts.googleapis.com/earlyaccess/sawarabimincho.css);/* test page sass*/
+
+body {
+  margin: 0;
+  color: #1d558d;
+  font-family: 'Sawarabi Mincho';
+}
+
+/* -----------
+       Mv
+  ------------ */
+
+.Mv {
+  height: 100%;
+  min-height: 770px;
+  background-image: url("/background.svg");
+}
+
+.Mv__img {
+  margin-top: 30%;
+}
+
+/* -----------
+    Greeting
+  ------------ */
+
+.Greeting {
+  height: 100%;
+  min-height: 770px;
+}
+
+.Greeting__ttl {
+  padding-left: 65%;
+  padding-right: 20%;
+  height: 10%;
+}
+
+.Greeting__ttl__txt {
+  font-size: 50px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #aad5ff));
+  background: linear-gradient(transparent 50%, #aad5ff 50%);
+}
+
+.Greeting__cont {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.Greeting__cont__txt {
+  letter-spacing: 5px;
+  line-height: 2;
+}
+
+.Greeting__cont__txt__main {
+  padding-left: 10%;
+}
+
+.Greeting__cont__txt__end {
+  padding-left: 70%;
+  padding-right: 20%;
+}
+
+/* -----------
+   WeddingAt
+  ------------ */
+
+.WeddingAt {
+  height: 100%;
+  min-height: 770px;
+}
+
+.WeddingAt__ttl {
+  padding-left: 57%;
+  padding-right: 20%;
+  height: 10%;
+}
+
+.WeddingAt__ttl__txt {
+  font-size: 50px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #aad5ff));
+  background: linear-gradient(transparent 50%, #aad5ff 50%);
+}
+
+.WeddingAt__cont {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.WeddingAt__cont__box__ttl {
+  font-size: 30px;
+}
+
+.WeddingAt__cont__box__txt {
+  padding-left: 10%;
+  letter-spacing: 5px;
+  line-height: 2;
+}
+
+/* -----------
+ Register Form
+  ------------ */
+
+.Form {
+  height: 100%;
+  min-height: 770px;
+}
+
+.Form__ttl {
+  padding-left: 57%;
+  padding-right: 20%;
+  height: 10%;
+}
+
+.Form__ttl__txt {
+  font-size: 50px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #aad5ff));
+  background: linear-gradient(transparent 50%, #aad5ff 50%);
+}
+
+.Form__cont {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.Form__cont__box__ttl {
+  font-size: 30px;
+}
+
+.Form__cont__box__txt {
+  padding-left: 10%;
+  letter-spacing: 5px;
+  line-height: 2;
+}
+
